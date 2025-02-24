@@ -43,6 +43,25 @@
             margin-top: 20px;
             transition: background-color 0.25s;
         }
+        .geoguessr-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .link-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .link-button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -52,7 +71,10 @@
         <button onclick="downloadFile('wisdom.zip')">Download wisdom.zip</button>
         <button onclick="downloadFile('sigma.ipynb')">Download LipAi</button>
         <button id="flashingButton" class="flashing-button">Click for Joke!</button>
-        <p>geoguessr code: fb569ax</p>
+        <div class="geoguessr-container">
+            <p>Geoguessr code: fb569ax</p>
+            <a href="https://geoguessr.io/" target="_blank" class="link-button">Go to Geoguessr</a>
+        </div>
     </div>
 
     <div class="video-container">
